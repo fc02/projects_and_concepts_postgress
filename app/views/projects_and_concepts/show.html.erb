@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @projects_and_concept.Name %>
+</p>
+
+<p>
+  <strong>Phase:</strong>
+  <%= @projects_and_concept.Phase %>
+</p>
+
+<p>
+  <strong>Ba:</strong>
+  <%= @projects_and_concept.BA %>
+</p>
+
+<p>
+  <strong>Pm:</strong>
+  <%= @projects_and_concept.PM %>
+</p>
+
+<p>
+  <strong>Next phase:</strong>
+  <%= @projects_and_concept.Next_Phase %>
+</p>
+
+<p>
+  <strong>Next phase due:</strong>
+  <%= @projects_and_concept.Next_Phase_Due %>
+</p>
+
+<p>
+  <strong>Original start date:</strong>
+  <%= @projects_and_concept.Original_Start_Date %>
+</p>
+
+<p>
+  <strong>Project end date:</strong>
+  <%= @projects_and_concept.Project_End_Date %>
+</p>
+
+<p>
+  <strong>Continuing ba commitment:</strong>
+  <%= @projects_and_concept.Continuing_BA_Commitment %>
+</p>
+
+<%= link_to 'Edit', edit_projects_and_concept_path(@projects_and_concept) %> |
+<%= link_to 'Back', projects_and_concepts_path %>

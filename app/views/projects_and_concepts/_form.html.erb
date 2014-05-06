@@ -1,0 +1,53 @@
+<%= form_for(@projects_and_concept) do |f| %>
+  <% if @projects_and_concept.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@projects_and_concept.errors.count, "error") %> prohibited this projects_and_concept from being saved:</h2>
+
+      <ul>
+      <% @projects_and_concept.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Phase %><br>
+    <%= f.text_field :Phase %>
+  </div>
+  <div class="field">
+    <%= f.label :BA %><br>
+    <%= f.text_field :BA %>
+  </div>
+  <div class="field">
+    <%= f.label :PM %><br>
+    <%= f.text_field :PM %>
+  </div>
+  <div class="field">
+    <%= f.label :Next_Phase %><br>
+    <%= f.text_field :Next_Phase %>
+  </div>
+  <div class="field">
+    <%= f.label :Next_Phase_Due %><br>
+    <%= f.text_field :Next_Phase_Due %>
+  </div>
+  <div class="field">
+    <%= f.label :Original_Start_Date %><br>
+    <%= f.date_select :Original_Start_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_End_Date %><br>
+    <%= f.date_select :Project_End_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Continuing_BA_Commitment %><br>
+    <%= f.text_field :Continuing_BA_Commitment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

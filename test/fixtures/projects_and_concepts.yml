@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Phase: MyString
+  BA: MyString
+  PM: MyString
+  Next_Phase: MyString
+  Next_Phase_Due: MyString
+  Original_Start_Date: 2014-05-03
+  Project_End_Date: 2014-05-03
+  Continuing_BA_Commitment: MyString
+
+two:
+  Name: MyString
+  Phase: MyString
+  BA: MyString
+  PM: MyString
+  Next_Phase: MyString
+  Next_Phase_Due: MyString
+  Original_Start_Date: 2014-05-03
+  Project_End_Date: 2014-05-03
+  Continuing_BA_Commitment: MyString
